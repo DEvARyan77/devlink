@@ -23,7 +23,7 @@ export default function User({ links, setLinks }) {
 
         if (!token) {
             console.error('No JWT found');
-            window.location.href = '/';
+            // window.location.href = '/';
             return;
         }
 
@@ -32,7 +32,7 @@ export default function User({ links, setLinks }) {
             setUsername(response.data.Username); // Update the state with the fetched username
         } catch (error) {
             console.error("Error fetching data:", error);
-            window.location.href = '/';
+            // window.location.href = '/';
         }
     };
 
