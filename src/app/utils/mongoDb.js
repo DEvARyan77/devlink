@@ -1,11 +1,6 @@
 import mongoose from 'mongoose';
-console.log(process.env.CONNECTION)
 
-mongoose.connect(process.env.CONNECTION,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    serverSelectionTimeoutMS: 20000,
-})
+mongoose.connect(process.env.CONNECTION)
     .then(() => {
         console.log("Connected to MongoDB");
     })
