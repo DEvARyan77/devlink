@@ -1,0 +1,33 @@
+#pages{
+    display: flex;
+}
+
+#page{
+    width: 100vw;
+    height: 100vh !important;
+    background-color: white;
+    overflow: hidden !important;
+}
+
+.save-button:disabled {
+  opacity: 0.5; /* Gray background */
+  cursor: not-allowed; /* Change cursor to indicate it's not clickable */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #LeftPage {
+      display: none;
+    }
+    #RightPage{
+        height: 90vh;
+    }
+  }
+
+  @media (min-width: 10px) and (max-width: 768px) {
+    #LeftPage {
+      display: none;
+    }
+    #RightPage{
+        height: 90vh;
+    }
+  }

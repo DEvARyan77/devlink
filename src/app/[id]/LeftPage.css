@@ -1,0 +1,28 @@
+#LeftPage{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#AvatarLeft{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    z-index: 9;
+    transform: translate(-205px,-205px);
+}
+
+.platforms-container{
+    position: absolute;
+    width: 300px;
+    height: 200px ;
+    transform: translate(-16px,60px);
+}
+
+.platforms-container div{
+    width: 230px !important;
+    margin-bottom: 20px !important;
+}

@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'InstrumentSemiBold';
+    src: url('../fonts/static/InstrumentSans-SemiBold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white; 
+    padding: 20px 20px; 
+    box-sizing: border-box;
+    font-family: 'InstrumentSemiBold' , sans-serif;
+    font-size: 16px;
+}
+
+#header div div img{
+    margin-right: 5px;
+}
+
+#header div{
+    display: flex;
+    margin-left: 50px;
+    transform: translateX(-40px);
+}
+
+#link:hover{
+    filter: brightness(0) saturate(100%) invert(22%) sepia(80%) saturate(5701%) hue-rotate(250deg) brightness(106%) contrast(101%);
+}
+
+#personalDetails:hover{
+    filter: brightness(0) saturate(100%) invert(22%) sepia(80%) saturate(5701%) hue-rotate(250deg) brightness(106%) contrast(101%);
+}
+
+#header >p{
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid #633CFF;
+    transition: all 0.5s;
+}
+
+#header >p:hover{
+    background-color: #EFEBFF;
+}
+
+#scroll{
+    height: 50px;
+    position: absolute;
+    width: 100px;
+    top: -70%;
+    left: -7%;
+    background-color: #EFEBFF;
+    border-radius: 10px;
+    z-index: 0;
+    transition: all 0.5s;
+}
+
+#header p img{
+    display: none;
+}
+
+@media (min-width: 10px) and (max-width: 768px) {
+    #header div div p{
+        display: none;
+    }
+    #header p img{
+        display: block !important;
+        margin-bottom: 10px !important;
+    }
+    #header >p{
+        width: 40px !important;
+        height: 30px;
+        padding: 3px 9px;
+    }
+    #header p span{
+        display: none;
+    }
+    #scroll{
+        width: 50px;
+        transform: translateX(-30px) !important;
+    }
+    #header div{
+        display: flex;
+        margin-left: 50px;
+        transform: translateX(-25px);
+    }
+}
