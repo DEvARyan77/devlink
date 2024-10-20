@@ -14,7 +14,10 @@ export default function Home() {
 }
   return (
     <div id="loginPage">
+      <title>DevLink-DevAryan</title>
       {login?(<Login setlogin={setlogin} write={write}></Login>):(<Signup setlogin={setlogin} write={write}></Signup>)}
     </div>
   );
 }
+
+

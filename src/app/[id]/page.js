@@ -9,6 +9,7 @@ export default function User(){
     const [links, setLinks] = useState([]);
     return(
         <div id='page'>
+            <title>DevLink-DevAryan</title>
             <Header></Header>
             <div id='pages'>
                 <LeftPage links={links} setLinks={setLinks} id="LeftPage"></LeftPage>
