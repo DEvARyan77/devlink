@@ -23,7 +23,7 @@
     text-align: center; /* Keeps code formatting in place */
 }
 
-@media (min-width: 10px) and (max-width: 768px) {
+@media (min-width: 10px) and (max-width: 765px) {
     #Empty {
         margin-left: 0;
         width: 100vw;
