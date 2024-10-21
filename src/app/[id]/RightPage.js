@@ -157,7 +157,7 @@ export default function User({links,setLinks}) {
                                                                 </ul>
                                                             )}
                                                             <Image src={Arrow} className={`arrow ${flipped === index ? 'flipped' : ''}`} alt="Arrow indicator" />
-                                                        </div>
+                                                        </div><br></br>
 
                                                         <label>Link</label>
                                                         <div className="input-wrapper">

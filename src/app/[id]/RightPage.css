@@ -237,18 +237,27 @@
     transform: translateY(-50%);
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 765px) and (max-width: 1024px) {
     #Add {
         transform: translateX(100px);
+    }
+    .error-message {
+        position: absolute;
+        right: 10px;
+        color: red;
+        font-size: 0.8em;
+        top: 50%;
+        transform: translate(-10%,-50%);
     }
 
     .scrollable-container {
         overflow-x: hidden;
         padding: 10px;
-        margin: 10px 0;
+        margin: 0px -1vw !important;
         height: 100vh; /* Make it take the full screen height */
         max-height: 65vh; /* Ensure it doesn't exceed the viewport height */
         box-sizing: border-box;
+        width: 550px;
     }
 
     .save-button {
@@ -265,7 +274,7 @@
     }
 }
 
-@media (min-width: 10px) and (max-width: 768px) {
+@media (min-width: 10px) and (max-width: 765px) {
     #Add {
         transform: translateX(100px);
     }
