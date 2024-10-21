@@ -5,7 +5,8 @@
     justify-content: center;
     margin-top: 10%;
     text-align: center;
-    transform: translateX(-4vw);
+    transform: translateX(-0vw);
+    height: 200px;
 }
 
 #Empty img {
