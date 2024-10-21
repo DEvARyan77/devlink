@@ -84,6 +84,95 @@ a {
   align-content: center;
   height: 200px;
 }
+
+.edge-browser >p{
+  position: relative;
+  margin-top: 50px;
+  margin-left: 0% !important;
+}
+.brave-browser >p{
+  position: relative;
+  margin-top: 50px;
+  margin-left: 0% !important;
+}
+
+.edge-browser  button{
+  transform: translateX(0px) !important;
+}
+
+/* Brave specific styles */
+.brave-browser button{
+  transform: translateX(0px) !important;
+}
+
+.edge-browser input{
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  width: 100% !important;
+  transform: translateX(0px) !important;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+}
+.brave-browser input{
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  width: 100% !important;
+  transform: translateX(0px) !important;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+}
+.edge-browser input{
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  width: 100% !important;
+  transform: translateX(0px) !important;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.brave-browser input{
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  width: 100% !important;
+  transform: translateX(0px) !important;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.edge-browser .ufo{
+  height: 20px;
+  width: 20px;
+  transform: translate(0px,-10px);
+  transition: all 0.5s;
+}
+
+.brave-browser .ufo{
+  height: 20px;
+  width: 20px;
+  transform: translate(0px,-10px);
+  transition: all 0.5s;
+}
+
+.edge-browser #Eye{
+  transform: translate(200px,-40px) !important;
+}
+
+.brave-browser #Eye{
+  transform: translate(200px,-40px) !important;
+}
+
 #form button{
   margin-top: 20px;
   width: 300px;

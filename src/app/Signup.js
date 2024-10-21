@@ -1,18 +1,34 @@
+import { useEffect, useState } from 'react';
 import Logo from './images/icon-preview-header.svg';
 import Avatar from './images/icon-profile-details-header.svg';
 import Ufo from './images/ufo-flying.png';
 import Image from "next/image";
-import { useState } from "react";
+import axios from 'axios';
 import './Signup.css';
-import axios from 'axios'
 
 export default function Signup({ setlogin, write }) {
     const [showPassword, setShowPassword] = useState(false);
+    const [browserClass, setBrowserClass] = useState('');
+
+    // Detect browser and set class
+    useEffect(() => {
+        const detectBrowser = async () => {
+            const userAgent = navigator.userAgent;
+
+            if (userAgent.includes('Edg')) {
+                setBrowserClass('edge-browser');
+            } else if (navigator.brave && await navigator.brave.isBrave()) {
+                setBrowserClass('brave-browser');
+            } else if (userAgent.includes('Chrome')) {
+                setBrowserClass('chrome-browser');
+            }
+        };
+
+        detectBrowser();
+    }, []);
 
     const handleSignup = async (e) => {
         e.preventDefault();
-
-        
 
         const userData = {
             Username: document.getElementById("signupUsername").value,
@@ -47,7 +63,7 @@ export default function Signup({ setlogin, write }) {
                     formData.append("Username", document.getElementById("signupUsername").value);
                     try {
                         // Upload the image
-                        const imageRes = await axios.post('/api/Image',formData);
+                        await axios.post('/api/Image', formData);
                     } catch (error) {
                         console.error("Error uploading image:", error);
                         return; // Stop execution if image upload fails
@@ -55,11 +71,10 @@ export default function Signup({ setlogin, write }) {
                 } else {
                     console.log("No image file selected");
                 }
-                        
-                    }
-                } catch (error) {
-                    console.error("Error registering user:", error);
-                }
+            }
+        } catch (error) {
+            console.error("Error registering user:", error);
+        }
     };
 
     const handleImageClick = () => {
@@ -78,7 +93,7 @@ export default function Signup({ setlogin, write }) {
     };
 
     return (
-        <form id="form" onSubmit={handleSignup}>
+        <form id="form" className={browserClass} onSubmit={handleSignup}>
             <Image 
                 src={Avatar} 
                 id='Avatar' 
