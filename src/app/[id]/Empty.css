@@ -10,3 +10,17 @@
     margin-top: 10px;
 }
 
+@media (min-width: 10px) and (max-width: 768px) {
+    #Empty{
+        margin-left: -50px;
+        width: 100vw;
+    }
+    #Empty pre{
+        margin-left: 70px;
+        font-size: 12px;
+        width: 100vw;
+    }
+    #Empty h1{
+        margin-left: 20%;
+    }
+}
