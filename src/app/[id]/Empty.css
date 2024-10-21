@@ -1,26 +1,40 @@
-#Empty img{
-    margin-left: 30%;
+#Empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    text-align: center;
+    transform: translateX(-4vw);
+}
+
+#Empty img {
     margin-top: 10%;
 }
-#Empty h1{
-    margin-left: 25%;
+
+#Empty h1 {
+    margin-top: 20px; /* Adjust margin if needed */
 }
-#Empty pre{
-    margin-left: 15%;
+
+#Empty pre {
     margin-top: 10px;
+    white-space: pre-wrap; /* Allows breaking text when needed */
+    word-wrap: break-word; /* Breaks long words when necessary */
+    text-align: center; /* Keeps code formatting in place */
 }
 
 @media (min-width: 10px) and (max-width: 768px) {
-    #Empty{
-        margin-left: -50px;
+    #Empty {
+        margin-left: 0;
         width: 100vw;
+        padding: 0 10px; /* Add some padding for mobile */
     }
-    #Empty pre{
-        margin-left: 70px;
-        font-size: 12px;
-        width: 100vw;
+    #Empty pre {
+        font-size: 0.7rem;
+        width: 100%; /* Ensure it spans the width */
     }
-    #Empty h1{
-        margin-left: 20%;
+    #Empty h1 {
+        margin-left: 0;
     }
 }
+
